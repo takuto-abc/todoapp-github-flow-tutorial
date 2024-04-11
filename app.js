@@ -3,7 +3,7 @@ const inputTodo = $("input").val();
 $("#todoList").append("<li><input type = 'checkbox'>" + inputTodo + "</li>");
 
 $("input").val("");
-})
+});
 
 $(document).on("change", "input[type=checkbox]", function () {
     if ($(this).is(":checked")) {
@@ -14,3 +14,5 @@ $(document).on("change", "input[type=checkbox]", function () {
       $(this).parent().css("color", "#000");
     }
   });
+
+
